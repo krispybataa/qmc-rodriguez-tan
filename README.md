@@ -5,10 +5,9 @@ Welcome to the QMC simulator designed by Clark Rodriguez and Jamilene Tan. The p
 
 # Acquiring the program
 
-1. If you have any form of GitBash installed 
-		- Clone the repository via the HTTPS link provided by GitHub
-2. If you do **NOT** have GitBash installed
-	  -  Download the ZIP of the project via the Code button on the top right 
+1. Before anything howevever, due to technical limitations it is recommended to download the IntelliJ IDE in order to run the simulator [IntelliJ Download](https://www.jetbrains.com/idea/download/?section=windows)
+3. If you have any form of GitBash installed -> Clone the repository via the HTTPS link provided by GitHub
+4. If you do **NOT** have GitBash installed -> Download the ZIP of the project via the Code button on the top right 
 	  
 ## User Manual
 
