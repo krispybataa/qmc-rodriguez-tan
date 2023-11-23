@@ -12,6 +12,7 @@ Welcome to the QMC simulator designed by Clark Rodriguez and Jamilene Tan. The p
 ## User Manual
 
 We have made a quick start-up guide to the program once you've finished downloading the project  [User Start-up Guide](https://docs.google.com/document/d/1uGNIS-yu88eCZNRx5qg42XajwNh0TcoH68D1h8zBpvE/edit?usp=sharing) 
+Alongside this, here are some sample Test Cases to get up to speed with the program. [Test Cases](https://docs.google.com/document/d/1jQHegxfxos_GbT-ERrcEBKcFm5Iy_Ug0pk9K47MHfnY/edit?usp=sharing)
 
 ## Technical Manual (JavaDocs)
 
