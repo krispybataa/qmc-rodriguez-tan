@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="QMCPane" prefHeight="752.0" prefWidth="754.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QMC">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="752.0" prefWidth="754.0" style="-fx-background-color: #393351;">
+         <children>
+      
+            <Button fx:id="start" layoutX="338.0" layoutY="589.0" mnemonicParsing="false" style="-fx-background-color: #FA2C56; -fx-border-color: ad1e3b; -fx-border-radius: 30 30 30 30; -fx-background-radius: 30 30 30; -fx-border-width: 3;" text="START" textFill="WHITE">
+                    <font>
+                       <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+                    </font>
+               <Rectangle arcHeight="50.0" arcWidth="50.0" height="50.0" layoutX="322.0" layoutY="580.0" opacity="0.53" stroke="BLACK" strokeType="INSIDE" width="87.0" />
+               <effect>
+                  <DropShadow height="3.8" offsetX="10.0" offsetY="10.0" radius="2.3499999999999996" width="7.6">
+                     <color>
+                        <Color opacity="0.2583587169647217" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+      
+            <Button fx:id="exit" layoutX="250.0" layoutY="709.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 30 30 30 30; -fx-border-color: ad1e3b; -fx-border-radius: 30 30 30 30; -fx-border-width: 3;" text="EXIT" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="37.39999999999998" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="422.00000000000006" AnchorPane.topAnchor="709.0">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <DropShadow height="7.59" offsetX="10.0" offsetY="10.0" radius="1.3975" width="0.0">
+                     <color>
+                        <Color opacity="0.25999999046325684" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+      
+            <Button fx:id="reset" layoutX="420.0" layoutY="709.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 30 30 30 30; -fx-border-color: ad1e3b; -fx-border-width: 3; -fx-border-radius: 30 30 30 30;" text="RESET" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow height="1.0" offsetX="10.0" offsetY="10.0" radius="0.0" width="0.0">
+                     <color>
+                        <Color opacity="0.25999999046325684" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+      
+            <Button fx:id="solve" layoutX="333.0" layoutY="709.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30; -fx-border-color: ad1e3b; -fx-border-width: 3;" text="SOLVE" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow height="12.56" offsetX="10.0" offsetY="10.0" radius="2.64" width="0.0">
+                     <color>
+                        <Color opacity="0.255319207906723" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+      
+                              <TextArea fx:id="longans" layoutX="67.0" layoutY="341.0" prefHeight="341.0" prefWidth="620.0">
+               <font>
+                  <Font name="Lucida Sans Typewriter Regular" size="17.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+      <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="41.0" prefHeight="400.0" prefWidth="500.0" text="Welcome to the QMC Simulator! This simulator solves for simplified Boolean equations by using the Quine-McCluskey method. Just click START if you wish to begin!" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="30.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="minlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="41.0" prefHeight="38.0" prefWidth="296.0" text="Enter Minterms" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Light" size="26.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="mininput" layoutX="156.0" layoutY="79.0" prefHeight="35.0" prefWidth="442.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+
+      <Label fx:id="dcprompt" alignment="CENTER" contentDisplay="CENTER" layoutX="183.0" layoutY="141.0" prefHeight="31.0" prefWidth="388.0" text="Are there Don't Cares?" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Light" size="26.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="dcbuttonYes" layoutX="345.0" layoutY="183.0" mnemonicParsing="false" style="-fx-background-color: #FA2C56; -fx-background-radius: 30 30 30 30; -fx-border-color: ad1e3b; -fx-border-radius: 30 30 30 30; -fx-border-width: 3;" text="YES" textFill="WHITE">
+         <font>
+             <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow height="10.5" offsetX="10.0" offsetY="10.0" radius="2.125" width="0.0">
+               <color>
+                  <Color opacity="0.25999999046325684" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+
+      <Button fx:id="dcbuttonNo" layoutX="347.0" layoutY="244.0" mnemonicParsing="false" style="-fx-background-color: #FA2C56; -fx-border-color: ad1e3b; -fx-background-radius: 30 30 30; -fx-border-radius: 30 30 30; -fx-border-width: 3;" text="NO" textFill="WHITE">
+         <font>
+             <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="10.0" offsetY="10.0" radius="4.75" width="0.0">
+               <color>
+                  <Color opacity="0.25999999046325684" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+
+      <Label fx:id="dcreprompt" alignment="CENTER" layoutX="245.0" layoutY="241.0" text="Enter Don't Cares" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Light" size="26.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="dcInput" layoutX="277.0" layoutY="280.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
